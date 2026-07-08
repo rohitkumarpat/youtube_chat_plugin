@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Video Chat</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <p class="eyebrow">YouTube transcript assistant</p>
+        <h1>Ask this video anything</h1>
+        <p id="videoMeta" class="video-meta">Looking for the current YouTube tab...</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-row">
+          <span id="statusBadge" class="badge">Idle</span>
+          <button id="indexButton" class="ghost-button" type="button">Index video</button>
+        </div>
+
+        <div id="messages" class="messages">
+          <article class="message assistant">
+            <p>Open a YouTube video, then ask a question about what is said in the transcript.</p>
+          </article>
+        </div>
+
+        <form id="chatForm" class="composer">
+          <label class="sr-only" for="questionInput">Ask a question</label>
+          <textarea
+            id="questionInput"
+            rows="3"
+            placeholder="What is the main point of this video?"
+            required
+          ></textarea>
+          <button id="sendButton" class="send-button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

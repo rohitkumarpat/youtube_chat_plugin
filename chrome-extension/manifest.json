@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Chat",
+  "version": "1.0.0",
+  "description": "Chat with the transcript of the current YouTube video.",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://youtube.com/*",
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_title": "YouTube Video Chat",
+    "default_popup": "popup.html"
+  }
+}
